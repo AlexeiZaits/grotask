@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'vladivostokbold';
+    src: url('bold-webfont.woff2') format('woff2'),
+         url('bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'interregular';
+    src: url('inter-regular-webfont.woff2') format('woff2'),
+         url('inter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
