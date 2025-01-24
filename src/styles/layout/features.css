@@ -1,0 +1,27 @@
+.features{
+    background-color: var(--color2-lighter);
+    overflow: hidden;
+}
+
+.features__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features__buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.features__slider{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.features__buttons-arrow2{
+    transform: rotate(180deg);
+}
