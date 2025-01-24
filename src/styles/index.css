@@ -1,0 +1,79 @@
+@import url(./reset.css);
+@import url(../assets/fonts/stylesheet.css);
+@import url(./typography.css);
+@import url(./components/buttons.css);
+@import url(./components/switches.css);
+@import url(./components/tab.css);
+@import url(./components/input.css);
+@import url(./components/accordion.css);
+@import url(./components/card.css);
+@import url(./layout/header.css);
+@import url(./layout/answers.css);
+@import url(./layout/challenge.css);
+@import url(./layout/features.css);
+@import url(./layout/team.css);
+
+:root {
+    /* gray colors */
+    --gray-black: #0D0D0D;
+    --gray-darker: #2B2B2B;
+    --gray-dark: #404040;
+    --gray-medium: #999999;
+    --gray-light: #CCCCCC;
+    --gray-lighter: #F2F2F2;
+    --gray-white: #FFFFFF;
+    
+    /* color1 colors */
+    --color1-darker: #A61029;
+    --color1-dark: #CC1433;
+    --color1-main: #F23051;
+    --color1-ligth: #FC8B9E;
+    --color1-lighter: #FCD7DD;
+
+    /* color2 colors */
+    --color2-darker: #554D80;
+    --color2-dark: #665C99;
+    --color2-main: #897ACC;
+    --color2-ligth: #CBC2F2;
+    --color2-lighter: #F9F7FF;
+
+    /* gradient */
+    --gradient-main-linear: linear-gradient(90deg, #897ACC 0%, #CC29A3 49.48%, #F23051 100%);
+    --gradient-main-text: linear-gradient(90deg, #897ACC, #CC29A3, #F23051);
+    
+    /* Шрифты и общие параметры */
+    --font-family: 'vladivostokbold', sans-serif;
+    --font-inter: 'interregular', sans-serif;
+    --border-color: #F1F1F1;
+    --border-main-radius: 1.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gray-white);
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 16px;
+
+    @media (min-width: 1367px) {
+        padding: 80px 45px;
+        max-width: 1420px;
+    }
+
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
