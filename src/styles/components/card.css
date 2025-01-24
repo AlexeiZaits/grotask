@@ -1,0 +1,41 @@
+.card{
+    padding: 0 40px;
+    border: 2px solid var(--color2-ligth);
+    border-radius: 40px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    height: 220px;
+    
+    @media (min-width: 1366px) {
+        gap: 20px;
+        height: 260px;
+    }
+
+    @media (min-width: 1920px) {
+        height: 280px;
+    }
+}
+
+hr.card__divider {
+    border: none;
+    border-top: 2px solid var(--gray-lighter);
+    width: 200px;
+
+    @media (min-width: 1366px) {
+        width: 224px;
+    }
+
+    @media (min-width: 1920px) {
+        width: 260px;
+    }
+}
+
+.card__title{
+    background: var(--gradient-main-linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

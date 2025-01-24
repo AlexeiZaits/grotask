@@ -1,0 +1,58 @@
+.tab{
+    display: flex;
+    width: max-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 4px;
+    border-radius: 12px;
+    border: 0px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tab.primary{
+    background-color: var(--gray-lighter);
+    
+    span {
+        color: var(--gray-dark);
+        transition: all 0.5s ease;
+    }
+
+    svg path {
+        transition: all 0.5s ease;
+    }
+
+    &:hover{
+        span {
+            color: var(--color1-main);
+        }
+        svg path {
+            stroke: var(--color1-main);;
+        }
+    }
+}
+
+.tab.secondary{
+    background-color: var(--color1-lighter);
+    
+    span {
+        color: var(--color1-darker);
+        transition: all 0.5s ease;
+    }
+
+    svg path {
+        transition: all 0.5s ease;
+    }
+    
+    &:hover{
+        span {
+            color: var(--gray-darker);
+        }
+
+        svg path {
+            stroke: var(--gray-darker);
+        }
+    }
+}

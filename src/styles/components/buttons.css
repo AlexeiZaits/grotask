@@ -1,0 +1,102 @@
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 8px;
+    padding: 13.5px 17.5px;
+    border-radius: 12px;
+    border: 0px;
+    font-weight: 700;
+    color: var(--gray-white);
+    cursor: pointer;
+    transition: all 2s;
+    height: 48px;
+}
+
+.btn.primary{
+    background-color: var(--color1-main);
+    
+    &:hover{
+        background-color: var(--color1-dark);
+    }
+
+    &:active{
+        background-color: var(--color1-ligth);
+        
+    }
+
+    &:focus{
+        background-color: var(--color1-ligth);
+    }
+
+    .icon img {
+        filter: brightness(0) invert(1);
+    }
+}
+
+.btn.btn-icon{
+    padding: 12px;
+}
+
+.btn.secondary{
+    background-color: var(--gray-dark);
+    
+    &:hover{
+        background-color: var(--gray-darker);
+    }
+
+    &:active{
+        background-color: var(--gray-medium);
+        
+    }
+
+    &:focus{
+        background-color: var(--gray-medium);
+    }
+
+    .icon img {
+        filter: brightness(0) invert(1);
+    }
+}
+
+.btn.social{
+
+    svg path {
+        transition: all 2s;
+    }
+
+    &:hover {
+        svg path {
+            fill: var(--color1-darker);
+        }
+        background-color: var(--color1-lighter);
+    }
+    
+    &:active{
+        svg path {
+            fill: var(--color1-darker);
+        }
+        background-color: var(--color1-ligth);
+        
+    }
+
+    &:focus{
+        svg path {
+            fill: var(--color1-darker);
+        }
+        background-color: var(--color1-ligth);
+    }
+}
+
+.icon.social-tg{
+    position: relative;
+    
+    > svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-57%, -50%);
+    }
+}
