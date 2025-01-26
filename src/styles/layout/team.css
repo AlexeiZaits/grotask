@@ -4,30 +4,73 @@
 
 .team__wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 20px 40px;
+    gap: 40px 16px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    @media (min-width: 1366px) {
+        gap: 40px 20px;
+    }
 }
 
 .team__images{
-    width: 50%;
-    height: 484px;
+    height: 264px;
+    width: 100%;
+    max-width: 342px;
     position: relative;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        margin: 0;
+        max-width: 49.2%;
+        height: 278px;
+        width: 49.2%;
+    }
+     
+    @media (min-width: 1366px) {
+        height: 484px;
+    }
 }
 
 .team__images-item{
-    width: 304px;
-    height: 304px;
+    width: 164px;
+    height: 164px;
     position: relative;
     overflow: hidden;
-    border-radius: 40px;
+    border-radius: 20px;
+    
+    @media (min-width: 768px) {
+        width: 174px;
+        height: 174px;
+        
+    }
+
+    @media (min-width: 1366px) {
+        border-radius: 40px;
+        width: 304px;
+        height: 304px;
+    }
 }
 
 .team__images-img{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.3);
+    top: 52%;
+    left: 45%;
+    transform: translate(-50%, -50%) scale(0.16);
+
+    @media (min-width: 768px) {
+        transform: translate(-50%, -50%) scale(0.17);
+    }
+
+    @media (min-width:1366px) {
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.28);
+    }
 }
 
 .team__images-1{
@@ -51,7 +94,16 @@
 }
 
 .team__img-1{
-    transform: translate(-50%, -50%) scale(0.6);
+    transform: translate(-50%, -50%) scale(0.32);
+
+    @media (min-width: 768px) {
+        transform: translate(-50%, -50%) scale(0.35);
+        
+    }
+
+    @media (min-width: 1366px) {
+        transform: translate(-50%, -50%) scale(0.55);
+    }
 }
 
 .team__img-3{
@@ -60,32 +112,42 @@
     background: var(--gradient-main-linear);
 }
 
+.team__img-3.reverse{
+    background: var(--color2-main);
+}
+
 .team__cta{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    max-width: 700px;
-    width: 50%;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 49.2%;
+    }
 }
 
 .team__buttons{
     display: flex;
     flex-direction: column;
     gap: 12px 20px;
-    padding: 40px;
+    padding: 20px;
     background-color: var(--color2-lighter);
     border: 2px solid var(--color2-ligth);
     border-radius: 40px;
     max-width: 551px;
     
     @media (min-width: 1366px) {
+        padding: 40px;
         flex-direction: row;
     }
 }
 
 .team__buttons-item{
     width: 100%;
-
+    scroll-behavior: smooth;
+    text-decoration: none;
+    
     @media (min-width: 1366px) {
         width: auto;
     }

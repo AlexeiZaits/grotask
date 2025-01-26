@@ -1,0 +1,15 @@
+.footer{
+    background-color: var(--gray-black);
+}
+
+.footer__wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 120px;
+    justify-content: space-between;
+}
+
+.footer__text{
+    color: var(--gray-lighter);
+}

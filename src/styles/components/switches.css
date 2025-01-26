@@ -2,13 +2,15 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
+}
+
+.check__slider{
     align-items: center;
 }
 
 .custom-checkbox {
     position: relative;
     display: inline-flex;
-    align-items: center;
     cursor: pointer;
 
     input[type="checkbox"] {

@@ -7,6 +7,7 @@
 @import url(./components/input.css);
 @import url(./components/accordion.css);
 @import url(./components/card.css);
+@import url(./components/menu.css);
 
 :root {
     /* gray colors */

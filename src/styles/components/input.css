@@ -4,14 +4,22 @@
     gap: 4px;
 }
 
-.input + .error {
+.input.error {
     > p {
+        display: none;
         color: var(--color1-dark);
+    }
+    .input__text-error{
+        display: block;
     }
 }
 
 .input__text{
     color: var(--gray-medium);
+}
+
+.input__text-error{
+    display: none;
 }
 
 .input__wrapper{
@@ -27,6 +35,7 @@
 .input__value{
     padding: 11.5px 12px;
     padding-left: 40px;
+    width: 100%;
     border-radius: 12px;
     color: var(--gray-dark);
     background-color: var(--gray-lighter);

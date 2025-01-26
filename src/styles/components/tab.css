@@ -1,6 +1,6 @@
 .tab{
     display: flex;
-    width: max-content;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -14,6 +14,7 @@
 
 .tab.primary{
     background-color: var(--gray-lighter);
+    text-decoration: none;
     
     span {
         color: var(--gray-dark);
@@ -36,6 +37,7 @@
 
 .tab.secondary{
     background-color: var(--color1-lighter);
+    text-decoration: none;
     
     span {
         color: var(--color1-darker);

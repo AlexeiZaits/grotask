@@ -7,11 +7,14 @@
 @import url(./components/input.css);
 @import url(./components/accordion.css);
 @import url(./components/card.css);
+@import url(./components/menu.css);
 @import url(./layout/header.css);
 @import url(./layout/answers.css);
 @import url(./layout/challenge.css);
 @import url(./layout/features.css);
 @import url(./layout/team.css);
+@import url(./layout/footer.css);
+@import url(./layout/modal.css);
 
 :root {
     /* gray colors */
@@ -56,6 +59,10 @@
 
 body {
     background-color: var(--gray-white);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .wrapper{
