@@ -67,10 +67,11 @@ export function handleMaskForm(){
 
 export function handleSandForm () {
     const form = document.querySelector('form');
-    const fullNameContainer = document.querySelector('.input__name');
-    const emailContainer = document.querySelector('.input__email');
-    const phoneContainer = document.querySelector('.input__phone');
+    const fullNameContainer = form.querySelector('.input__name');
+    const emailContainer = form.querySelector('.input__email');
+    const phoneContainer = form.querySelector('.input__phone');
     const listContainers = {"phone": phoneContainer, "email": emailContainer, "fullName": fullNameContainer}
+    const submitButton = form.querySelector('.challenge__button');
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -80,6 +81,8 @@ export function handleSandForm () {
         const {isValid, validateFullForm} = handleVadateForm(entriesForm.fullName, entriesForm.phone, entriesForm.email)
         
         if (isValid){
+            submitButton.disabled = true;
+            form.classList.add("loader")
             emailjs.send(import.meta.env.VITE_KEY_SERVICE, import.meta.env.VITE_KEY_TEMPLATE, {
                 from_name: "Алексей",
                 to_name: "Гротеск",
@@ -91,7 +94,11 @@ export function handleSandForm () {
                 form.reset();
                 alert('Email отправлен!')
             })
-            .catch((error) => alert('Ошибка: ' + error.text));
+            .catch((error) => alert('Ошибка: ' + error.text))
+            .finally(() => {
+                submitButton.disabled = false
+                form.classList.remove("loader")
+            })
             Object.keys(validateFullForm).forEach((item) => {
                 listContainers[item].classList.remove("error")
             })
