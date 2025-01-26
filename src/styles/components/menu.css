@@ -3,9 +3,9 @@
     gap: 16px;
     padding: 20px;
     border-radius: 20px;
-    width: max-content;
     background-color: var(--gray-white);
-    
+    width: max-content;
+
     @media (min-width: 1366px) {
         gap: 20px;
         border-radius: 40px;
@@ -26,10 +26,15 @@
 }
 
 .menu__divider{
-    width: 320px;
+    width: 302px;
     height: 2px;
     background-color: var(--gray-light);
     border: none;
+    
+    @media (min-width: 767px) {
+        width: 320px;
+        
+    }
 
     @media (min-width: 1366px) {
         width: 400px;
