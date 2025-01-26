@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     width: max-content;
+    position: relative;
     gap: 8px;
     padding: 13.5px 17.5px;
     border-radius: 12px;
@@ -13,6 +14,20 @@
     cursor: pointer;
     transition: all 2s;
     height: 48px;
+}
+
+.btn .loader{
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--color1-main);
+    border-top: 2px solid black;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: none;
+    animation: spin 2s linear infinite;
 }
 
 .btn.primary{
@@ -25,10 +40,6 @@
     &:active{
         background-color: var(--color1-ligth);
         
-    }
-
-    &:focus{
-        background-color: var(--color1-ligth);
     }
 
     .icon img {
@@ -50,10 +61,6 @@
     &:active{
         background-color: var(--gray-medium);
         
-    }
-
-    &:focus{
-        background-color: var(--gray-medium);
     }
 
     .icon img {
@@ -81,13 +88,6 @@
         }
         background-color: var(--color1-ligth);
         
-    }
-
-    &:focus{
-        svg path {
-            fill: var(--color1-darker);
-        }
-        background-color: var(--color1-ligth);
     }
 }
 
@@ -118,4 +118,13 @@
         background-color: var(--color1-ligth);
     }
 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

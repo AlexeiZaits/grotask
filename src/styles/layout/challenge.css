@@ -56,6 +56,15 @@
     }
 }
 
+.challenge__form.loader {
+    .btn .loader{
+        display: block;
+    }
+    .form__button-action{
+        opacity: 0;
+    }
+}
+
 .challenge__inputs{
     display: flex;
     flex-direction: column;
