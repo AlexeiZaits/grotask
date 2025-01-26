@@ -69,8 +69,8 @@ html {
     width: 100%;
     margin: 0 auto;
     padding: 40px 16px;
-
-    @media (min-width: 1367px) {
+    
+    @media (min-width: 1366px) {
         padding: 80px 45px;
         max-width: 1420px;
     }

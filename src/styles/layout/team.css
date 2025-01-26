@@ -119,11 +119,15 @@
 .team__cta{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     width: 100%;
-
+    
     @media (min-width: 768px) {
         width: 49.2%;
+    }
+
+    @media (min-width: 1366px) {
+        gap: 40px;
     }
 }
 
@@ -134,10 +138,11 @@
     padding: 20px;
     background-color: var(--color2-lighter);
     border: 2px solid var(--color2-ligth);
-    border-radius: 40px;
+    border-radius: 20px;
     max-width: 551px;
     
     @media (min-width: 1366px) {
+        border-radius: 40px;
         padding: 40px;
         flex-direction: row;
     }

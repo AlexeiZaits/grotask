@@ -4,7 +4,8 @@
     padding: 18px;
     border: 2px solid var(--gray-lighter);
     transition: all 0.5s ease;
-
+    line-height: 20px;
+    
     &:hover{
         border-color: var(--gray-light);
     }

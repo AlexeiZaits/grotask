@@ -38,10 +38,14 @@
 .features__slider{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 12px;
     margin-top: 40px;
     overflow-x: auto;
     scroll-behavior: smooth;
+
+    @media (min-width: 1366px) {
+        gap: 20px;
+    }
 }
 
 .features__buttons-arrow2{
